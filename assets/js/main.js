@@ -80,3 +80,9 @@ document.getElementById("trazar-ruta").addEventListener("click", trazarRuta)
 
 document.getElementById("encuentrame").addEventListener("click", buscar);
 }
+
+
+
+/* <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEzdiOfdxzWc5tVRa8EQD7H2d21g22qbA&callback=initMap&libraries=places">
+</script> */

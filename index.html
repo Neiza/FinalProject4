@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/fonts/css/font-awesome.css">
-  <link rel="stylesheet" href="assets\fonts-b\glyphicons-halflings-regular.svg">
   <link rel="stylesheet" href="assets\css\bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Document</title>
@@ -30,7 +28,7 @@
           <h2>Disfruta del viaje</h2>
           <h2>Eres dueño de tu tiempo</h2>
           <br>
-          <h3>Viaja con lab<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>car</h3>
+          <h3>Viaja con lab<span></span>car</h3>
         </div>
         <div class="form">
           <div class="show-for-medium col-md-6">
@@ -46,32 +44,73 @@
       </div>
     </div>
   </section>
-  <section id="download" class=" bg-yellow">
-    <div class="row">
-      <div class=" colxs-12 col-md-4 cont-img col-push-md-2">
-        <img class="img-responsive" src="assets\img\celular.png" alt="">
+  <section id="down-sm" class="bg-yellow hidden-lg">
+    <div class="row border-sm hidden-lg ">
+      <div class="col-xs-12 text-center">
+          <h3>La nueva app</h3>
+        </div>
+        <div class="col-xs-10 col-md-push-3 cont-img text-center">
+          <img class=" img-sm" src="assets\img\celular.png" alt="">
+        </div>
+    </div>
+    <div class="row hidden-lg text-sm">
+      <div class="col-xs-12 text-center">
+        <h3>Llega a tu destino aún más rápido</h3>
       </div>
-      <div class="col-md-push-1col-md-3">
-      <h2>●	Descarga la nueva app</h2>
-      <h3>La versión actualizada de LabCar está llena de nuevas funciones para
-         llegar a donde quieras aún más fácil y rápido.</h3>
-      <h3>Con solo tocar un boton, un auto llega justo a tu ubicación. Súbete y
-        no te preocupes: tu conductor sabe exactamente a donde ir.</h3>
+    </div>
+  </section>
+  <section id="download" class=" bg-yellow hidden-xs ">
+    <div class="row border hidden-xs">
+      <div class="col-md-4 col-md-push-2 cont-img  hidden-xs ">
+        <img class="" src="assets\img\celular.png" alt="">
+      </div>
+      <div class="col-md-push-3 col-md-4 text hidden-xs ">
+        <h2>●	Descarga la nueva app</h2>
+        <h3>La versión actualizada de LabCar está llena de nuevas funciones para
+           llegar a donde quieras aún más fácil y rápido.</h3>
+        <h3>Con solo tocar un boton, un auto llega justo a tu ubicación. Súbete y
+          no te preocupes: tu conductor sabe exactamente a donde ir.</h3>
       </div>
     </div>
   </section>
   <section id="drive">
-    <div class="row">
-      <div class="col-md-3 col-md-offset-8 box2">
+    <div class="">
+      <div class=" col-xs-12 col-md-4 col-md-offset-8 box2">
         <h2>Conduce cuando quieras</h2>
-        <h3>LabCar es una opción flexibe para alcanzar tus metas finncieras</h3>
-        <button  class="btn bg-yellow" type="button" name="button">Conviértete en conductor</button>
+        <h4>LabCar es una opción flexibe para alcanzar tus metas financieras</h4>
+        <button  class="btn bg-yellow btn-lg" type="button" name="button">Conviértete en conductor</button>
       </div>
     </div>
 
   </section>
   <section id="prices" class="bg-yellow">
+    <div class="row ">
+      <div class="col-xs-12 col-md-6 col-md-push-1 ">
+        <h2>Tarifas</h2>
+        <h4>Consulte la tarifas de Labcar aqui</h4>
+        <div class=" row">
+          <label for="partida" class="col-xs-10 col-md-1  col-form-label">a</label>
+          <input class="col-sm-6" type="text" class="form-control" id="partida" placeholder="Ingrese su punto de partida">
+        </div>
+        <div class=" row">
+        <label for="destino" class="col-xs-10 col-md-1 col-form-label">b</label>
+          <input class="col-sm-6" type="password" class="form-control" id="destino" placeholder="Ingrese su destino">
+        </div>
+        <br>
+        <div class="col-md-4 col-md-push-3 hidden-xs">
+          <button class="btn btn-default" type="button" name="button"><strong>¡TRAZAR RUTA!</strong></button>
+        </div>
+      </div>
+      <div id="map-container" class="col-md-5  hidden-xs"  >
+        <div class="">
+          <div id="map" class="col-md-11 hidden-xs col-md-push-1">
 
+          </div>
+        </div>
+      </div>
+
+
+     </div>
   </section>
   <footer>
 
@@ -80,15 +119,12 @@
 
 
 
-s
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="assests\js\bootstrap.min.js">
+  <script type="text/javascript" src="assets\js\bootstrap.min.js">
   </script>
-  <script src="assests\js\app.js">
+  <script src="assets\js\main.js">
   </script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEzdiOfdxzWc5tVRa8EQD7H2d21g22qbA&callback=initMap&libraries=places">
-  </script>
+
 </body>
 </html>
