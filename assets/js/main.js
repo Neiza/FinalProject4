@@ -11,7 +11,7 @@ function initMap() {
 
 
 var funcionError = function(error){
-  alert("tenemos un problema pr encontra la ubicación");
+  alert("tenemos un problema para encontrar la ubicación");
 }
 var  latitud ,longitud;
 var funcionExito = function(posicion){
@@ -32,57 +32,6 @@ function buscar(){
   }
 }
 
-var inputPartida = document.getElementById("punto-partida");
-var inputDestino = document.getElementById("punto-destino");
-
-new google.maps.places.Autocomplete(inputPartida);
-new google.maps.places.Autocomplete(inputDestino);
-
-var directionsService = new google.maps.DirectionsService;
-var directionsDisplay = new google.maps.DirectionsRenderer;
-
-var tarifa = document.getElementById("tarifa");
-
-var calculateAndDisplayRoute = function(directionsService, directionsDisplay){
-  directionsService.route({
-    origin: inputPartida.value,
-    destination: inputDestino.value,
-    travelMode:'DRIVING'
-   }, function (response, status){
-        if(status==='OK'){
-          var distancia = Number((response.routes[0].legs[0].distance.text.replace("km", "")).replace(",","."));
-          tarifa.classList.remove("none");
-          var costo = distancia*1.75;
-          if(costo<4){
-            tarifa.innerHTML = "S/. 4"
-          }
-
-          tarifa.innerHTML = "S/. " + parseInt(costo);
-
-          console.log(response.routes[0].legs[0].distance.text);
-
-          directionsDisplay.setDirections(response);
-        }
-        else{
-          window.alert("no encontramos una ruta.")
-        }
-  });
-}
-
-directionsDisplay.setMap(map);
-
-var trazarRuta = function(){
-  calculateAndDisplayRoute(directionsService, directionsDisplay);
-};
-
-document.getElementById("trazar-ruta").addEventListener("click", trazarRuta)
-
 
 document.getElementById("encuentrame").addEventListener("click", buscar);
 }
-
-
-
-/* <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEzdiOfdxzWc5tVRa8EQD7H2d21g22qbA&callback=initMap&libraries=places">
-</script> */
