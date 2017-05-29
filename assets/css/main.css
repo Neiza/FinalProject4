@@ -1,0 +1,93 @@
+*{
+
+}
+
+.container-fluid{
+  height: 110px;
+}
+
+.menu{
+  padding: 30px;
+}
+
+.anchors{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a{
+  text-decoration: none;
+  color: black;
+}
+
+#register{
+  height: 690px;
+  width: 100%;
+  background: url("../img/taxi.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position-y:-1230px;
+}
+
+.registro{
+  padding-top: 155px;
+
+}
+
+.bg-yellow{
+  background-color: #f7b617;
+}
+
+.box{
+  height: 380px;
+  color: white;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+
+.text-whit{
+}
+
+#register input{
+ color: #fff;
+ background-color: #f7b617;
+ border: none;
+ border-bottom: 1px solid white;
+}
+
+.bien{
+  padding-top: 15px;
+}
+
+@@media screen and(width-min:600px) {
+
+}
+#download{
+  height: 520px;
+  color: white;
+}
+
+.border{
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-top: 40px;
+}
+
+#drive{
+  height: 445px;
+  background: url("../img/conduce.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y:-250px;
+}
+
+.box2{
+  height: 445px;
+  background-color:black;
+  color: white;
+}
+
+#prices{
+  height: 460px;
+}
