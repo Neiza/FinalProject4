@@ -26,7 +26,14 @@
   background: url("../img/taxi.jpg");
   background-size: cover;
   background-repeat:no-repeat;
-  background-position-y:-1230px;
+  background-position-y:-1430px;
+}
+
+@media (min-width:400px) {
+  #register{
+    background-size: 100% 50%;
+  }
+
 }
 
 .registro{
@@ -148,6 +155,10 @@
   line-height: 30px;
 }
 
+#partida::-webkit-input-placeholder, #destino::-webkit-input-placeholder{
+  color: white;
+}
+
 #map-container{
   height:500px;
   border: 1px solid white;
@@ -162,4 +173,25 @@
   height: 470px;
   border: 1px solid white;
   padding: 0;
+}
+
+footer{
+  height: 650px;
+  background-color: #3e3f40;
+  color: white;
+}
+
+footer h2{
+  padding-top: 90px;
+  border-bottom: 1px solid white;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  padding-top: 50px;
+}
+
+footer h5{
+  border-top: 1px solid white;
 }
