@@ -29,12 +29,7 @@
   background-position-y:-1430px;
 }
 
-@media (min-width:400px) {
-  #register{
-    background-size: 100% 50%;
-  }
 
-}
 
 .registro{
   padding-top: 155px;
